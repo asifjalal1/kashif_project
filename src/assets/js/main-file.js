@@ -5,6 +5,9 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+// import Swiper from 'swiper';
+// import GLightbox from 'glightbox';
+// import AOS from 'aos';
 
 (function() {
   "use strict";
@@ -118,9 +121,9 @@
   /**
    * Initiate glightbox
    */
-  const glightbox = GLightbox({
-    selector: '.glightbox'
-  });
+  // const glightbox = GLightbox({
+  //   selector: '.glightbox'
+  // });
 
   /**
    * Init isotope layout and filters
