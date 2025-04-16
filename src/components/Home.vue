@@ -1,4 +1,5 @@
 <script setup>
+
 </script>
 <template>
     <main class="main">
@@ -10,7 +11,7 @@
                 data-bs-interval="5000">
 
                 <div class="carousel-item active">
-                    <img src="../assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+                    <img src="/img/hero-carousel/hero-carousel-1.jpg" alt="">
                     <div class="container">
                         <h2>We are professional</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
@@ -21,7 +22,7 @@
                 </div><!-- End Carousel Item -->
 
                 <div class="carousel-item">
-                    <img src="../assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+                    <img src="/img/hero-carousel/hero-carousel-2.jpg" alt="">
                     <div class="container">
                         <h2>At vero eos et accusamus</h2>
                         <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id
@@ -32,7 +33,7 @@
                 </div><!-- End Carousel Item -->
 
                 <div class="carousel-item">
-                    <img src="../assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
+                    <img src="/img/hero-carousel/hero-carousel-3.jpg" alt="">
                     <div class="container">
                         <h2>Temporibus autem quibusdam</h2>
                         <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur
@@ -64,7 +65,7 @@
                 <div class="row position-relative">
 
                     <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img
-                            src="../assets/img/about.jpg"></div>
+                            src="/img/about.jpg"></div>
 
                     <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
                         <h2 class="inner-title">Consequatur eius et magnam</h2>
@@ -246,7 +247,7 @@
                     <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                            <img src="../assets/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
+                            <img src="/img/masonry-portfolio/masonry-portfolio-1.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>App 1</h4>
                                 <p>Lorem ipsum, dolor sit</p>
@@ -259,7 +260,7 @@
                         </div><!-- End Portfolio Item -->
 
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                            <img src="../assets/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
+                            <img src="/img/masonry-portfolio/masonry-portfolio-2.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Product 1</h4>
                                 <p>Lorem ipsum, dolor sit</p>
@@ -272,7 +273,7 @@
                         </div><!-- End Portfolio Item -->
 
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                            <img src="../assets/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
+                            <img src="/img/masonry-portfolio/masonry-portfolio-3.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Branding 1</h4>
                                 <p>Lorem ipsum, dolor sit</p>
@@ -285,7 +286,7 @@
                         </div><!-- End Portfolio Item -->
 
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                            <img src="../assets/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
+                            <img src="/img/masonry-portfolio/masonry-portfolio-4.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>App 2</h4>
                                 <p>Lorem ipsum, dolor sit</p>
@@ -298,7 +299,7 @@
                         </div><!-- End Portfolio Item -->
 
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                            <img src="../assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
+                            <img src="/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Product 2</h4>
                                 <p>Lorem ipsum, dolor sit</p>
@@ -311,7 +312,7 @@
                         </div><!-- End Portfolio Item -->
 
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                            <img src="../assets/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
+                            <img src="/img/masonry-portfolio/masonry-portfolio-6.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Branding 2</h4>
                                 <p>Lorem ipsum, dolor sit</p>
@@ -324,7 +325,7 @@
                         </div><!-- End Portfolio Item -->
 
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
-                            <img src="../assets/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
+                            <img src="/img/masonry-portfolio/masonry-portfolio-7.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>App 3</h4>
                                 <p>Lorem ipsum, dolor sit</p>
@@ -337,7 +338,7 @@
                         </div><!-- End Portfolio Item -->
 
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-                            <img src="../assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+                            <img src="/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Product 3</h4>
                                 <p>Lorem ipsum, dolor sit</p>
@@ -350,7 +351,7 @@
                         </div><!-- End Portfolio Item -->
 
                         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-                            <img src="../assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+                            <img src="/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
                             <div class="portfolio-info">
                                 <h4>Branding 3</h4>
                                 <p>Lorem ipsum, dolor sit</p>
@@ -384,35 +385,35 @@
                 <div class="row g-0 clients-wrap">
 
                     <div class="col-xl-3 col-md-4 client-logo">
-                        <img src="../assets/img/clients/client-1.png" class="img-fluid" alt="">
+                        <img src="/img/clients/client-1.png" class="img-fluid" alt="">
                     </div><!-- End Client Item -->
 
                     <div class="col-xl-3 col-md-4 client-logo">
-                        <img src="../assets/img/clients/client-2.png" class="img-fluid" alt="">
+                        <img src="/img/clients/client-2.png" class="img-fluid" alt="">
                     </div><!-- End Client Item -->
 
                     <div class="col-xl-3 col-md-4 client-logo">
-                        <img src="../assets/img/clients/client-3.png" class="img-fluid" alt="">
+                        <img src="/img/clients/client-3.png" class="img-fluid" alt="">
                     </div><!-- End Client Item -->
 
                     <div class="col-xl-3 col-md-4 client-logo">
-                        <img src="../assets/img/clients/client-4.png" class="img-fluid" alt="">
+                        <img src="/img/clients/client-4.png" class="img-fluid" alt="">
                     </div><!-- End Client Item -->
 
                     <div class="col-xl-3 col-md-4 client-logo">
-                        <img src="../assets/img/clients/client-5.png" class="img-fluid" alt="">
+                        <img src="/img/clients/client-5.png" class="img-fluid" alt="">
                     </div><!-- End Client Item -->
 
                     <div class="col-xl-3 col-md-4 client-logo">
-                        <img src="../assets/img/clients/client-6.png" class="img-fluid" alt="">
+                        <img src="/img/clients/client-6.png" class="img-fluid" alt="">
                     </div><!-- End Client Item -->
 
                     <div class="col-xl-3 col-md-4 client-logo">
-                        <img src="../assets/img/clients/client-7.png" class="img-fluid" alt="">
+                        <img src="/img/clients/client-7.png" class="img-fluid" alt="">
                     </div><!-- End Client Item -->
 
                     <div class="col-xl-3 col-md-4 client-logo">
-                        <img src="../assets/img/clients/client-8.png" class="img-fluid" alt="">
+                        <img src="/img/clients/client-8.png" class="img-fluid" alt="">
                     </div><!-- End Client Item -->
 
                 </div>
