@@ -4,8 +4,8 @@
 
         <a href="index.html" class="logo d-flex align-items-center me-auto">
             <!-- Uncomment the line below if you also wish to use an image logo -->
-            <!-- <img src="assets/img/logo.png" alt=""> -->
-            <h1 class="sitename">Company</h1><span>.</span>
+            <img src="/img/mainlogo.png" alt="">
+            <h1 class="sitename">ALTILUNE</h1> <span></span>
         </a>
 
         <nav id="navmenu" class="navmenu">
@@ -55,34 +55,27 @@
         mobileNavToggleBtn.classList.toggle('bi-x');
     }
     onMounted(() => {
-        setTimeout(() => {
-            nextTick(() => {
-                const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
-                mobileNavToggleBtn.addEventListener('click', mobileNavToogle(mobileNavToggleBtn));
-            
-                /**
-                * Hide mobile nav on same-page/hash links
-                */
-                document.querySelectorAll('#navmenu a').forEach(navmenu => {
-                    navmenu.addEventListener('click', () => {
+        nextTick(() => {
+            const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
+            mobileNavToggleBtn.addEventListener('click', () => mobileNavToogle(mobileNavToggleBtn));
+            document.querySelectorAll('#navmenu a').forEach(navmenu => {
+                navmenu.addEventListener('click', () => {
                     if (document.querySelector('.mobile-nav-active')) {
                         mobileNavToogle(mobileNavToggleBtn);
                     }
-                    });
-            
                 });
+        
+            });
 
-                document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
-                    navmenu.addEventListener('click', function (e) {
+            document.querySelectorAll('.navmenu .toggle-dropdown').forEach(navmenu => {
+                navmenu.addEventListener('click', function (e) {
                     e.preventDefault();
                     this.parentNode.classList.toggle('active');
                     this.parentNode.nextElementSibling.classList.toggle('dropdown-active');
                     e.stopImmediatePropagation();
-                    });
                 });
-        
-            })
-        }, 1000);
+            });
+        })
     })
 </script>
 <style scoped>

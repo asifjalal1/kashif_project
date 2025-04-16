@@ -1,6 +1,3 @@
-<script setup>
-
-</script>
 <template>
     <main class="main">
 
@@ -64,8 +61,8 @@
 
                 <div class="row position-relative">
 
-                    <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img
-                            src="/img/about.jpg"></div>
+                    <div class="col-lg-7 about-img" data-aos="zoom-out" data-aos-delay="200"><img src="/img/about.jpg">
+                    </div>
 
                     <div class="col-lg-7" data-aos="fade-up" data-aos-delay="100">
                         <h2 class="inner-title">Consequatur eius et magnam</h2>
@@ -424,5 +421,77 @@
 
     </main>
 </template>
+<script setup>
+import AOS from 'aos';
+import GLightbox from 'glightbox';
+import Isotope from 'isotope-layout';
+import imagesLoaded from 'imagesloaded';
+import { onMounted, nextTick } from 'vue';
 
-<style scoped></style>
+const glightbox = GLightbox({
+    selector: '.glightbox'
+});
+function aosInit() {
+    AOS.init({
+        duration: 600,
+        easing: 'ease-in-out',
+        once: true,
+        mirror: false
+    });
+}
+function toggleScrolled() {
+    const selectBody = document.querySelector('body');
+    const selectHeader = document.querySelector('#header');
+    if (!selectHeader.classList.contains('scroll-up-sticky') && !selectHeader.classList.contains('sticky-top') && !selectHeader.classList.contains('fixed-top')) return;
+    window.scrollY > 100 ? selectBody.classList.add('scrolled') : selectBody.classList.remove('scrolled');
+}
+onMounted(() => {
+    nextTick(() => {
+        document.addEventListener('scroll', toggleScrolled);
+        window.addEventListener('load', toggleScrolled);
+        window.addEventListener('load', aosInit);
+        document.querySelectorAll('.isotope-layout').forEach(function (isotopeItem) {
+            let layout = isotopeItem.getAttribute('data-layout') ?? 'masonry';
+            let filter = isotopeItem.getAttribute('data-default-filter') ?? '*';
+            let sort = isotopeItem.getAttribute('data-sort') ?? 'original-order';
+
+            let initIsotope;
+            imagesLoaded(isotopeItem.querySelector('.isotope-container'), function () {
+                initIsotope = new Isotope(isotopeItem.querySelector('.isotope-container'), {
+                    itemSelector: '.isotope-item',
+                    layoutMode: layout,
+                    filter: filter,
+                    sortBy: sort
+                });
+            });
+
+            isotopeItem.querySelectorAll('.isotope-filters li').forEach(function (filters) {
+                filters.addEventListener('click', function () {
+                    isotopeItem.querySelector('.isotope-filters .filter-active').classList.remove('filter-active');
+                    this.classList.add('filter-active');
+                    initIsotope.arrange({
+                        filter: this.getAttribute('data-filter')
+                    });
+                    if (typeof aosInit === 'function') {
+                        aosInit();
+                    }
+                }, false);
+            });
+        });
+        document.querySelectorAll('.carousel-indicators').forEach((carouselIndicator) => {
+            carouselIndicator.closest('.carousel').querySelectorAll('.carousel-item').forEach((carouselItem, index) => {
+                console.log('kashif')
+                if (index === 0) {
+                    carouselIndicator.innerHTML += `<li data-bs-target="#${carouselIndicator.closest('.carousel').id}" data-bs-slide-to="${index}" class="active"></li>`;
+                } else {
+                    carouselIndicator.innerHTML += `<li data-bs-target="#${carouselIndicator.closest('.carousel').id}" data-bs-slide-to="${index}"></li>`;
+                }
+            });
+        });
+
+    })
+})
+</script>
+<style scoped>
+
+</style>
