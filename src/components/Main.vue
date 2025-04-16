@@ -7,7 +7,7 @@ import { onMounted, nextTick } from 'vue';
 onMounted(async () => {
   await nextTick(); // Ensures DOM is fully rendered
   const script = document.createElement('script');
-  script.src = '/src/assets/js/main.js';
+  script.src = 'assets/js/main.js';
   document.body.appendChild(script);
 });
 </script>
